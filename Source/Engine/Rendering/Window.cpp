@@ -27,3 +27,8 @@ bool Window::Create(
 
 	return m_window != nullptr;
 }
+
+SDL_Window* Window::GetNativeWindow() const
+{
+	return m_window;
+}

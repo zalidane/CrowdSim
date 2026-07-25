@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Engine\Core\Application.cpp" />
+    <ClCompile Include="Source\Engine\Rendering\Renderer.cpp" />
     <ClCompile Include="Source\Engine\Rendering\Window.cpp" />
     <ClCompile Include="Source\Main.cpp" />
   </ItemGroup>
@@ -30,14 +31,24 @@
     <ClInclude Include="Source\Engine\ECS\SparseSet.h" />
     <ClInclude Include="Source\Engine\ECS\System.h" />
     <ClInclude Include="Source\Engine\ECS\World.h" />
+    <ClInclude Include="Source\Engine\Rendering\Renderer.h" />
     <ClInclude Include="Source\Engine\Rendering\Window.h" />
+    <ClInclude Include="Source\Game\Agent.h" />
     <ClInclude Include="Source\Game\Components\Position.h" />
     <ClInclude Include="Source\Game\Components\Velocity.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="CrowdSim.slnx" />
+    <None Include="Documentation\Future-Ideas.md">
+      <SubType>
+      </SubType>
+    </None>
     <None Include="Documentation\README-Phase-01.md" />
     <None Include="Documentation\README-Phase-02.md" />
+    <None Include="Documentation\README-Phase-03.md">
+      <SubType>
+      </SubType>
+    </None>
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
