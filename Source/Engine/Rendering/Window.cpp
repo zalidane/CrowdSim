@@ -2,19 +2,28 @@
 
 #include <SDL3/SDL.h>
 
-bool Window::Create()
+Window::Window() :m_window(nullptr)
+{
+}
+
+Window::~Window()
+{
+	if (m_window)
+	{
+		SDL_DestroyWindow(m_window);
+	}
+}
+
+bool Window::Create(
+	const char* title, 
+	int width, 
+	int height)
 {
 	m_window = SDL_CreateWindow(
-		"CrowdSim",
-		1280,
-		720,
+		title, 
+		width, 
+		height, 
 		0);
 
 	return m_window != nullptr;
-}
-
-void Window::Destroy()
-{
-	SDL_DestroyWindow(m_window);
-	m_window = nullptr;
 }

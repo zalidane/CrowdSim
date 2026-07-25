@@ -35,7 +35,13 @@
     <ClInclude Include="Source\Game\Components\Velocity.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="CrowdSim.slnx" />
     <None Include="Documentation\README-Phase-01.md" />
+    <None Include="Documentation\README-Phase-02.md" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="LICENSE.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>

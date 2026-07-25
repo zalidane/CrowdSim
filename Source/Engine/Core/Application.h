@@ -1,4 +1,7 @@
 #pragma once
+
+#include "../Rendering/Window.h"
+
 class Application
 {
 public:
@@ -7,5 +10,7 @@ public:
 	void Run();
 
 	void Shutdown();
-};
 
+private:
+	Window m_window;
+};

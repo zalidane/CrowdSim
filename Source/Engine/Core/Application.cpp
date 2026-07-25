@@ -1,11 +1,25 @@
 #include "Application.h"
 
+#include <SDL3/SDL.h>
 #include <iostream>
-#include <SDL3/SDL_events.h>
 
 bool Application::Initialize()
 {
+	if (!SDL_Init(SDL_INIT_VIDEO))
+	{
+		return false;
+	}
+
+	if (!m_window.Create(
+		"CrowdSim",
+		1280,
+		720))
+	{
+		return false;
+	}
+
 	std::cout << "Application initialized.\n";
+	
 	return true;
 }
 
@@ -29,5 +43,5 @@ void Application::Run()
 
 void Application::Shutdown()
 {
-	std::cout << "Application shutting down.\n";
+	SDL_Quit();
 }

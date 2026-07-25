@@ -5,11 +5,15 @@ struct SDL_Window;
 class Window
 {
 public:
-	bool Create();
+	Window();
+	~Window();
 
-	void Destroy();
+	bool Create(
+		const char* title,
+		int width,
+		int height);
 
 private:
-	SDL_Window* m_window = nullptr;
+	SDL_Window* m_window;
 };
 

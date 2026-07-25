@@ -1,4 +1,5 @@
 #include "Engine/Core/Application.h"
+#include <SDL3/SDL.h>
 
 int main()
 {
