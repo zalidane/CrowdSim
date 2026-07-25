@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="CrowdSim.vcxproj" Id="31979e2a-d640-4e79-87f3-de7f6331baa8" />
+</Solution>
