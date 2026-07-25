@@ -1,25 +1,6 @@
 # CrowdSim
 
-A learning project focused on modern C++ and game engine architecture.
-
-The long-term goal is to build a small data-oriented Entity Component System (ECS) engine capable of simulating thousands of moving entities while teaching:
-
-- Modern C++20
-- Data-oriented design
-- Entity Component Systems (ECS)
-- Asset loading
-- Serialization
-- Memory pools
-- Job systems
-- Basic rendering
-
-The project will evolve incrementally, with each phase introducing one new concept while keeping the simulation functional.
-
----
-
-# Current Phase
-
-**Phase 1: Project Setup and Application Skeleton**
+## Phase 1: Project Setup and Application Skeleton**
 
 Current milestone:
 
@@ -44,78 +25,6 @@ Future milestones:
 ⬜ Serialization
 
 ⬜ Job system
-
----
-
-# Project Structure
-
-```text
-CrowdSim/
-│
-├── Assets/
-│
-├── Build/
-│   ├── Intermediate/
-│   └── x64/
-│
-├── External/
-│
-├── Source/
-│   │
-│   ├── Engine/
-│   │   ├── Assets/
-│   │   ├── Core/
-│   │   ├── ECS/
-│   │   ├── Jobs/
-│   │   ├── Memory/
-│   │   ├── Rendering/
-│   │   ├── Serialization/
-│   │   └── Utils/
-│   │
-│   └── Game/
-│       ├── Components/
-│       ├── Scenes/
-│       ├── Systems/
-│       └── Main.cpp
-│
-├── CrowdSim.vcxproj
-└── CrowdSim.slnx
-```
-
----
-
-# Architecture
-
-The project is organized into two major areas.
-
-## Engine
-
-The reusable engine code.
-
-Examples:
-
-- ECS implementation
-- Rendering systems
-- Asset management
-- Job system
-- Memory allocators
-
-The engine should eventually become independent of the crowd simulation itself.
-
----
-
-## Game
-
-The simulation-specific code.
-
-Examples:
-
-- Components
-- Systems
-- Spawn logic
-- Crowd behaviors
-
-The Game layer should use the Engine layer rather than implementing low-level infrastructure itself.
 
 ---
 
